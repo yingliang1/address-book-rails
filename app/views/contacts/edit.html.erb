@@ -1,21 +1,25 @@
 <%= form_for @contact do |f| %>
-    <div>
-      <%= f.label :name %>
-      <%= f.text_field :name %>
-    </div>
-    <div>
-      <%= f.label :address %>
-      <%= f.text_field :address %>
-    </div>
-    <div>
-      <%= f.label :email %>
-      <%= f.text_field :email %>
-    </div>
-    <div>
-      <%= f.label :phone %>
-      <%= f.number_field :phone %>
-    </div>
-    <div>
-      <%= f.submit %>
-    </div>
+<table class = "center">
+    <tr>
+      <td><%= f.label :name %></td>
+      <td><%= f.text_field :name %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :address %></td>
+      <td><%= f.text_field :address %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :email, class: "t1"  %></td>
+      <td><%= f.text_field :email %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :phone, class: "t1"  %></td>
+      <td><%= f.number_field :phone %></td>
+    </tr>
+    <tr>
+    <td></td>
+     <td> <%= f.submit %></td>
+    </tr>
     <% end %>
+    </table>
+    <%= button_to "Go Back", '/contacts', method: :get, class: "button"%>

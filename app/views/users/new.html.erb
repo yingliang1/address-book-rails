@@ -1,8 +1,20 @@
+<body>
 <h1>Sign Up</h1>
-<%= form_for @user do |f|%>
-  <%= f.label :username%><br>
-  <%= f.text_field :username%><br>
-  <%= f.label :password%><br>
-  <%= f.password_field :password%><br>
-  <%= f.submit %>
+<table class="center">
+<thead>
+   <%= form_for @user do |f|%>
+   <th><%= f.label :username%></th>
+   <th><%= f.text_field :username%></th>
+   <tr>
+   <td><%= f.label :password%></td>
+   <td><%= f.password_field :password%></td>
+   </tr>
+   <tr>
+   <td></td>
+   <td> <%= f.submit %></td>
+   </tr>
 <%end%>
+</table>
+<%= button_to "Exit", '/welcome', method: :get%>
+
+</body>

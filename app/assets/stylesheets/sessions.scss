@@ -1,3 +1,48 @@
 // Place all the styles related to the sessions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+body {
+  //background-image: url("Enter path or url here");
+  background-color: #2670b1;
+  background-size: 100%;
+  color: white;
+  text-align: center;
+  margin-top: 100px;
+}
+
+a {
+  text-decoration: none;
+  font-family: Arial;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+a:link {
+  color: white;
+}
+a:hover {
+  color: purple;
+}
+a:visited {
+  color: clear;
+}
+h1 {
+}
+.container {
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.link_to {
+  font-size: 15px;
+  font-family: "Times New Roman", Times, serif;
+  color: hsl(190, 19%, 67%);
+}
+th {
+  width: 150px;
+}
+.button {
+  margin-top: 20px;
+}

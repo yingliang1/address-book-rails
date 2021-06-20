@@ -1,4 +1,6 @@
-<h1>Welcome</h1>
-
-<%= button_to "Login", '/login', method: :get%>
-<%= button_to "Sign Up", '/users/new', method: :get%>
+<%= stylesheet_link_tag "sessions" %>
+<body>
+    <h1>Welcome to Address Book Website!</h1>
+    <%= link_to "I Want to Login", '/login', method: :get%><br>
+    <%= link_to "I Want to Sign Up", '/users/new', method: :get%>
+</body>

@@ -1,6 +1,6 @@
-<h1>Contact List</h1>
-<%= link_to "Add new Contact", new_contact_path %>
-<table>
+<h1>Hi,<%= current_user.username %>. Welcome to Your Contact List</h1>
+
+<table class="center">
   <thead>
     <th>Name</th>
     <th>Address</th>
@@ -14,10 +14,11 @@
     <td><%= contact.email %></td>
     <td><%= contact.phone %></td>
     <td>
-      <%= link_to "Edit", edit_contact_path(contact) %>
-      <%= link_to "Delete", contact, method: :delete, data: { confirm: "Are you sure you want to delete this contact?"} %>
+      <%= link_to "Edit",  edit_contact_path(contact) , class: "link_to"%>
+      <%= link_to "Delete", contact, method: :delete, data: { confirm: "Are you sure you want to delete this contact?"}, class: "link_to"%>
     </td>
   </tr>
   <% end %>
 </table>
-<%= button_to "Log Out", '/welcome', method: :get%>
+<%= link_to "Add new Contact", new_contact_path, class: "link_to" %>
+<%= button_to "Log Out", '/welcome', method: :get, class: "button"%>
