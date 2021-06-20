@@ -1,0 +1,23 @@
+<h1>Contact List</h1>
+<%= link_to "Add new Contact", new_contact_path %>
+<table>
+  <thead>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Email</th>
+    <th>Phone</th>
+  </thead>
+    <% @contacts.each do |contact| %>
+  <tr>
+    <td><%= contact.name %></td>
+    <td><%= contact.address %></td>
+    <td><%= contact.email %></td>
+    <td><%= contact.phone %></td>
+    <td>
+      <%= link_to "Edit", edit_contact_path(contact) %>
+      <%= link_to "Delete", contact, method: :delete, data: { confirm: "Are you sure you want to delete this contact?"} %>
+    </td>
+  </tr>
+  <% end %>
+</table>
+<%= button_to "Log Out", '/welcome', method: :get%>
