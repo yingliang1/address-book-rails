@@ -1,24 +1,36 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This ADDRESS BOOK website mainly help people to manage their contact.
 
-Things you may want to cover:
+Technologies and Programming languages include to build this website:
 
-* Ruby version
+- Ruby
 
-* System dependencies
+- Nodejs
 
-* Configuration
+- Yarn
 
-* Database creation
+- PostgreSQL
 
-* Database initialization
+- Ruby on Rails
 
-* How to run the test suite
+- Session(User Authentication)
 
-* Services (job queues, cache servers, search engines, etc.)
+- HTML
 
-* Deployment instructions
+- CSS
+  ...
 
-* ...
+Also added addressbook-instruction for user guide.
+
+- this is just a start application. If we want to make it comprehensive, some things could be considered like:
+
+* Database table design to add some primary key to avoid repeat and foreign key to connect into different contact list for different users.
+
+* Better UI design.
+
+* Format correction: Ex.email address and give some alert on incorrect format
+
+* More Security Password setup
+
+...
